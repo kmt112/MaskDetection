@@ -73,7 +73,7 @@ Validation of dataset
 ```sh
 !./darknet detector valid data/obj.data cfg/yolov4-obj.cfg /content/drive/MyDrive/yolov4-obj_bestfin.weights -dont_show -map
 ```
-#Results
+## Results
 ![Image of results](https://github.com/kmt112/probable-lamp/blob/master/Final%20Chart%5B3985%5D.png)
 
 ## License
