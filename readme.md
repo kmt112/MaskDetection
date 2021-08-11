@@ -56,9 +56,6 @@ Contains all the makefile and all other relevant folders required to run, compil
 ## 3. https://github.com/Cartucho/OpenLabeling (run on terminal (e.g. command prompt/ubuntu)
 In order to supplement more data for the class inbalances, ive added another data repo https://github.com/cabani/MaskedFace-Net. The data taken from the above repo would require you to physically add a bounding box label it accordingly.
 
-* `Makefile`​: Before compiling the makefile, i changed  `OPENCV = 1` and `GPU = 1`
-* `darknet/chart.png`​: the chart consists of MAP and losses after every iteration. MAP and losses are obtianed through the validation dataset. A total of 6,000 iterations has been done and the best weights have been saved at 5,800 iterations.
-
 ## Running of darknet Yolov4.
 Download pretrained weights from COCO dataset.
 ```sh
