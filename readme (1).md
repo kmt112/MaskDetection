@@ -26,8 +26,13 @@ In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to
 # CV_YoloV4.ipnyb
 CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. Laslty, the code also shifts the necessary file cloned from gitclone into the respective folders.
 
+# CV_Yolo_EDA.ipynb
+Exploratory data anlysis file on the original dataset shows that there is a class imbalance (See Figure 1.). since this is a tutorial, I have included 100 additional data for mask_worn_incorrect so as to reduce the overall class inbalance. In reality however, we would be introducing more data to reduce the overall class inbalance.
+
+![Image of results](https://github.com/kmt112/probable-lamp/blob/master/EDA_class%20inbalance.png)
+
 # Gitclone
-There are two seperate Gitfolders that ive cloned to create the algorithm. 
+There are three seperate Gitfolders that ive cloned to create the algorithm. 
 
 ## 1. https://github.com/kmt112/probable-lamp
 Contains configuration file obj.data, obj.names and config.cfg file that is required. Change config.cfg backup folder location according to where you want to store the backup weights.
@@ -44,6 +49,12 @@ Contains configuration file obj.data, obj.names and config.cfg file that is requ
 
 ## 2. https://github.com/AlexeyAB/darknet
 Contains all the makefile and all other relevant folders required to run, compile and save the results of the custom object detector. 
+
+* `Makefile`​: Before compiling the makefile, i changed  `OPENCV = 1` and `GPU = 1`
+* `darknet/chart.png`​: the chart consists of MAP and losses after every iteration. MAP and losses are obtianed through the validation dataset. A total of 6,000 iterations has been done and the best weights have been saved at 5,800 iterations.
+
+## 3. https://github.com/Cartucho/OpenLabeling (run on terminal (e.g. command prompt/ubuntu)
+In order to supplement more data for the class inbalances, ive added another data repo https://github.com/cabani/MaskedFace-Net. The data taken from the above repo would require you to physically add a bounding box label it accordingly.
 
 * `Makefile`​: Before compiling the makefile, i changed  `OPENCV = 1` and `GPU = 1`
 * `darknet/chart.png`​: the chart consists of MAP and losses after every iteration. MAP and losses are obtianed through the validation dataset. A total of 6,000 iterations has been done and the best weights have been saved at 5,800 iterations.
