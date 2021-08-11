@@ -9,7 +9,8 @@ In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to
 * `mask_weared_incorrect `​: Mask worn, but incorrectly
 
 # Sypnopsis of the problem. 
-* **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP). 
+* **Dataset**: https://www.kaggle.com/andrewmvd/face-mask-detection
+* **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP).
 
 ## Overview of Submitted folder
 .
