@@ -2,14 +2,14 @@
 ## AI/ML Tutorial 
 Date :10 Aug 21
 ## Project Overview
-In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to be one of the best protection against the COVID-19 virus. Masks are one of the most commonly available PPE however, its effectiveness deteroriates if not worn properly. Therefore, by creating an CV algorithm that is able to detect whether mask are worn, worn properly and worn at all would help to serve the community better.
+In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to be one of the best protection against the COVID-19 virus. Masks are one of the most commonly available PPE however, its effectiveness deteroriates if not worn properly. Therefore, by creating an CV algorithm that is able to detect whether mask are worn, worn properly and worn at all would help to serve the community better. Reason Yolov4 was chosen over otehr algorithms as a first cut is due to yolov4 consisitent higher average precision at real-time detection at higher FPS, thus making it the ideal choice. For more information on YoloV4 perfomance refer to https://blog.roboflow.com/pp-yolo-beats-yolov4-object-detection/
 ### Target Classes
 * `with_mask `​: Mask worn properly
 * `without_mask `​: Mask not worn
 * `mask_weared_incorrect `​: Mask worn, but incorrectly
 
 # Sypnopsis of the problem. 
-* **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP).
+* **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP). 
 
 ## Overview of Submitted folder
 .
