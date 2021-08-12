@@ -85,6 +85,8 @@ Validation of dataset
 ## Results
 ![Image of results](https://github.com/kmt112/probable-lamp/blob/master/Final%20Chart%5B3985%5D.png)
 
+The model performed better than expected at the best MAP of ~98%. However the initial results show that the model tend to be bias towards mask worn and mask unworn. It is unable/ show low confidence in predicting mask worn incorrectly. As such i added more improper mask wearing data to decrease the bias. Results can be see 
+
 ## License
 MIT
 Darknet Yolov4
