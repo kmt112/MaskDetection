@@ -68,7 +68,7 @@ Picking up from last saved
 ```
 Validation of dataset
 ```sh
-!./darknet detector valid data/obj.data cfg/yolov4-obj.cfg /content/drive/MyDrive/yolov4-obj_bestfin.weights -dont_show -map
+!./darknet detector valid data/obj.data cfg/yolov4-obj.cfg /content/drive/MyDrive/yolov4-obj_oldbest.weights -dont_show -map
 ```
 ## Results
 ![Image of results](https://github.com/kmt112/probable-lamp/blob/master/Final%20Chart%5B3985%5D.png)
