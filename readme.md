@@ -2,7 +2,7 @@
 ## AI/ML Tutorial 
 Date :10 Aug 21
 ## Project Overview
-In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to be one of the best protection against the COVID-19 virus. Masks are one of the most commonly available PPE however, its effectiveness deteroriates if not worn properly. Therefore, by creating an CV algorithm that is able to detect whether mask are worn, worn properly and worn at all would help to serve the community better. Reason Yolov4 was chosen over other algorithms is due to yolov4 consisitently higher average precision at real-time detection at higher FPS, thus making it the ideal choice. For more information on YoloV4 perfomance refer to https://blog.roboflow.com/pp-yolo-beats-yolov4-object-detection/
+In light of covid-19 pandemic, Masks and Personal Protection Equipment (PPE) serves to be one of the best protection against the COVID-19 virus. Masks are one of the most commonly available PPE however, its effectiveness deteroriates if not worn properly. Therefore, by creating an CV algorithm that is able to detect whether mask are worn, worn incorrectly or not worn at all would help to serve the community better. The model has to react fast therefore requiring lesser computational power than computationally heavy model. this makes yolov4 an ideal algorithm. Yolov4 has consisitently higher average precision at real-time detection(FPS: > 45) in addition yolov4 is a one-stage object detector thus making it computationally lighter. For more information on YoloV4 perfomance refer to https://blog.roboflow.com/pp-yolo-beats-yolov4-object-detection/
 ### Target Classes
 * `with_mask `​: Mask worn properly
 * `without_mask `​: Mask not worn
@@ -12,13 +12,13 @@ In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to
 * **Dataset**: https://www.kaggle.com/andrewmvd/face-mask-detection
 * **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP).
 
-# CV_YoloV4.ipnyb
-CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. Laslty, the code also shifts the necessary file cloned from gitclone into the respective folders.
-
 # CV_Yolo_EDA.ipynb
 Exploratory data anlysis file on the original dataset shows that there is a class imbalance (See Figure 1.). since this is a tutorial, I have included 100 additional data for mask_worn_incorrect so as to reduce the overall class inbalance. In reality however, we would be introducing more data to reduce the overall class inbalance.
 
 ![Image of results](https://github.com/kmt112/probable-lamp/blob/master/EDA_class%20inbalance.png)
+
+# CV_YoloV4_final.ipnyb
+CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. The code also shifts the necessary file cloned from gitclone into the respective folders. Finally, darknet is being compiled and run. Weight are generated over 6000 iterations and the best weights are saved in google drive.
 
 # Gitclone
 There are three seperate Gitfolders that ive cloned to create the algorithm. 
