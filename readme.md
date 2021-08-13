@@ -94,6 +94,8 @@ Exhibit 3. Validation on old weights (left) and new weights (right)
 
 <img src="https://github.com/kmt112/probable-lamp/blob/master/results/mask%20incorect%20(old).png" width="400" height="500"> <img src="https://github.com/kmt112/probable-lamp/blob/master/results/mask%20incorect%20(New).jpg" width="400" height="500">
 
+The various exhibits show that with the inclusion of new data, especially on the inbalanced classes, greatly improves the precision of the model.
+
 ## License
 MIT
 Darknet Yolov4
