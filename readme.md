@@ -70,10 +70,29 @@ Validation of dataset
 ```sh
 !./darknet detector valid data/obj.data cfg/yolov4-obj.cfg /content/drive/MyDrive/yolov4-obj_oldbest.weights -dont_show -map
 ```
-## Results
-![Image of results](https://github.com/kmt112/probable-lamp/blob/master/Final%20Chart%5B3985%5D.png)
+# Results
+<img src="https://github.com/kmt112/probable-lamp/blob/master/results/Final%20Chart%202.jpg" width="800" height="500"> <img src="https://github.com/kmt112/probable-lamp/blob/master/results/Final%20Chart.png" width="800" height="500">
 
-The model performed better than expected at the best MAP of ~98%. However the initial results show that the model tend to be bias towards mask worn and mask unworn. It is unable/ show low confidence in predicting mask worn incorrectly. As such i added more improper mask wearing data to decrease the bias. Results can be see 
+
+The initial model(top) was trained with the default data, the latter model was retrained with new data inclusion. The latter model trained on more data took a longer time to achieve steady mAP over the iterations. Both model performed better than expected at the best validation of mAP ~98%.
+
+## mAP vs IOU treshhold
+
+As IOU treshhold increases, average precision drops. However, the latter model that was trained on a newer dataset performed significantly better at predicting `mask_weared_incorrect`. This is of course expected as the newer weights have learnt from more examples. The results shows that by introducing more data on inblanaced classes it will improve the overall prediction of the model.
+
+## Prediction of sample images
+
+Exhibit 1. Validation on old weights (left) and new weight (right)
+
+![Old_mask_1](https://github.com/kmt112/probable-lamp/blob/master/results/Mask_incorrect_29_old.jpg) ![New mask_1](https://github.com/kmt112/probable-lamp/blob/master/results/Mask_incorrect_29_new.jpg)
+
+Exhibit 2. Validation on old weights (left) and new weights (right)
+
+![Old_mask_2](https://github.com/kmt112/probable-lamp/blob/master/results/Mask_incorrect_99_old.jpg) ![New mask_2](https://github.com/kmt112/probable-lamp/blob/master/results/mask_incorrect_99_new.jpg)
+
+Exhibit 3. Validation on old weights (left) and new weights (right)
+
+<img src="https://github.com/kmt112/probable-lamp/blob/master/results/mask%20incorect%20(old).png" width="400" height="500"> <img src="https://github.com/kmt112/probable-lamp/blob/master/results/mask%20incorect%20(New).jpg" width="400" height="500">
 
 ## License
 MIT
