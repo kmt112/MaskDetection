@@ -12,18 +12,6 @@ In light of covid-19 pandemic, Masks and Personal Protection Equipment serves to
 * **Dataset**: https://www.kaggle.com/andrewmvd/face-mask-detection
 * **Image detection and classification**: The algorithm will determine if a detected face is wearing mask, wearing mask incorrectly or not wearing mask at all. The evaluation criteria is Mean Average Precision (MAP).
 
-## Overview of Submitted folder
-.
-├── CV_YoloV4.ipynb
-├── Face mask detection.zip
-│   └── Annotations
-│   └── Images
-├── Results 
-│   └── with_mask.txt
-│   └── without_mask.txt
-│   └── mask_weared_incorrect.txt
-│   └── MAP.jpg
-
 # CV_YoloV4.ipnyb
 CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. Laslty, the code also shifts the necessary file cloned from gitclone into the respective folders.
 
@@ -58,7 +46,7 @@ Contains all the makefile and all other relevant folders required to run, compil
 In order to supplement more data for the class inbalances, ive added another data repo https://github.com/cabani/MaskedFace-Net. The data taken from the above repo would require you to physically add a bounding box label it accordingly.
 
 ## Running of darknet Yolov4.
-Download pretrained weights from COCO dataset.
+Download pretrained weights from COCO dataset for transfer learning. This is only used in the first iteration, thereafter you will used the pretrained weights that your model have saved.
 ```sh
 !wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 ```
