@@ -80,6 +80,8 @@ The initial model(top) was trained with the default data, the latter model was r
 
 As IOU treshhold increases, average precision drops. However, the latter model that was trained on a newer dataset performed significantly better at predicting `mask_weared_incorrect`. This is of course expected as the newer weights have learnt from more examples. The results shows that by introducing more data on inblanaced classes it will improve the overall prediction of the model.
 
+![Old_mask_1](https://github.com/kmt112/probable-lamp/blob/master/results/table%20results.PNG)
+
 ## Prediction of sample images
 
 Exhibit 1. Validation on old weights (left) and new weight (right)
