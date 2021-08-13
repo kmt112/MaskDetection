@@ -1,3 +1,0 @@
-/mydrive/images/plane.jpg
-/mydrive/images/street.jpg
-/mydrive/images/highway.jpg
