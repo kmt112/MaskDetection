@@ -14,13 +14,11 @@ In light of covid-19 pandemic, Masks and Personal Protection Equipment (PPE) ser
 
 # CV_YoloV4_final.ipnyb
 
-Exploratory data anlysis file on the original dataset shows that there is a class imbalance (See Figure 1.). since this is a tutorial, I have included 100 additional data for mask_worn_incorrect so as to reduce the overall class inbalance. In reality however, we would be introducing more data to reduce the overall class inbalance.
-
-CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. The code also shifts the necessary file cloned from gitclone into the respective folders. Finally, darknet is being compiled and run. Weight are generated over 6000 iterations and the best weights are saved in google drive.
-
+Exploratory data anlysis file on the original dataset shows that there is a class imbalance. Since this is a tutorial, I have included 100 additional data for mask_worn_incorrect so as to reduce the overall class inbalance. In reality however, we would be introducing more data to reduce the overall class inbalance.
 
 ![Image of results](https://github.com/kmt112/probable-lamp/blob/master/EDA_class%20inbalance.png)
 
+CV_yolov4 notebook converts .xml file into YOLOv4 format. In addition, CV_yolov4 noteboook generates data into train/validation split. The code also shifts the necessary file cloned from gitclone into the respective folders. Finally, darknet is being compiled and run. Weight are generated over 6000 iterations and the best weights are saved in google drive.
 
 # Gitclone
 There are three seperate Gitfolders that ive cloned to create the algorithm. 
