@@ -31,7 +31,7 @@ Contains configuration file obj.data, obj.names and config.cfg file that is requ
 ### Data Augementation (located in config.cfg)
   * `width/height `​: Changed the resolution size to 416, increasing the width and height of yolov4 improves the resolution.
   * `batches `​: when batches are divided by subdivision, this determines the number of images that will be processes in parallel.
-  * `satuation = 1.5, Hue = 1.5 `​: Mo
+  * `satuation = 1.5, Hue = 1.5 `​: Changes the satuation and hue
   * `mosaic = 1 `​: Mosaic data augemenration combines 4 training images into one in certain ratios (instead of two in cutmix). This prevents over-reliance on any key features.
   * `blur = 1 `​: blur will be applied randomly in 50% of the time.
   * `jitter = 0.3`​: randomly changes size of image and its aspect ratio.
